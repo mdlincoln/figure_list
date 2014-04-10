@@ -1,5 +1,17 @@
+require "rake/testtask"
+
+task :default => [:build, :test] do
+	puts "Done"
+end
+
+Rake::TestTask.new do |t|
+  t.libs << "test"
+end
+
 desc "Build and install the figure_list gem"
 task :build do
+	puts "Building gem..."
 	`gem build figure_list.gemspec`
+	puts "Installing gem..."
 	`gem install figure_list-0.0.1.gem`
 end
