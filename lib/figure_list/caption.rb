@@ -13,7 +13,7 @@ class Caption
     @img = figure["img"]
   end
 
-  # Render a caption in a mix of Markdown and LaTeX
+  # Render a caption in a mix of Markdown and LaTeX for processing by Pandoc
   def render
     return "![#{@artist}, *#{@title}*, #{@date}. #{@medium.capitalize}, #{@dimensions}. #{@collection}, #{@location}. (Image source: #{@source})\\label{fig:#{@label}}](#{@img})"
   end

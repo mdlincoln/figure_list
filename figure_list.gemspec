@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'figure_list'
-  s.version     = '0.0.1'
+  s.version     = '0.1.0'
   s.date        = '2014-04-09'
   s.summary     = "Creates a Markdown/LaTeX figure list from a YAML file"
   s.description = "From a well-formatted YAML file, creates a hybrid MD/LaTeX figure list ready to be appended to an article being processed by Pandoc"
