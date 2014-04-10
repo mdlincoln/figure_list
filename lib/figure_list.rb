@@ -21,5 +21,6 @@ class FigureList
       list_string << caption.render
       list_string << "\n"
     end
+    return list_string
   end
 end
