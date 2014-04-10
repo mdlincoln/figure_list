@@ -1,4 +1,5 @@
 require "psych"
+require "figure_list/caption"
 
 class FigureList
 	def initialize(filepath)

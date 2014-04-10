@@ -6,6 +6,6 @@ Gem::Specification.new do |s|
   s.description = "Creates a Markdown/LaTeX figure list from a YAML file"
   s.authors     = ["Matthew Lincoln"]
   s.email       = 'mlincol1@umd.edu'
-  s.files       = ["lib/figure_list.rb"]
+  s.files       = ["lib/figure_list.rb", "lib/figure_list/caption.rb"]
   s.license       = 'MIT'
 end
