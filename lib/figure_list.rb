@@ -5,7 +5,7 @@ class FigureList
 	def initialize(filepath)
 		# Read in a YAML file from a given filepath
 		@sourcepath = filepath
-		yaml_list = Psych.load_file(@@sourcepath)
+		yaml_list = Psych.load_file(@sourcepath)
 
     # Create an array of formatted captions
 		@figure_captions = []
