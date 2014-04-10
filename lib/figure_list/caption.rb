@@ -15,6 +15,6 @@ class Caption
 
   # Render a caption in a mix of Markdown and LaTeX
   def render
-    return "![#{artist}, *#{title}*, #{date}. #{medium.capitalize}, #{dimensions}. #{collection}, #{location}. (Image source: #{source})\\label{fig:#{label}}](#{img})"
+    return "![#{@artist}, *#{@title}*, #{@date}. #{@medium.capitalize}, #{@dimensions}. #{@collection}, #{@location}. (Image source: #{@source})\\label{fig:#{@label}}](#{@img})"
   end
 end
