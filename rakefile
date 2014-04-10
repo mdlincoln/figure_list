@@ -1,0 +1,5 @@
+desc "Build and install the figure_list gem"
+task :build do
+	`gem build figure_list.gemspec`
+	`gem install figure_list-0.0.1.gem`
+end
