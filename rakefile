@@ -1,7 +1,7 @@
 require "rake/testtask"
 require "rubygems/tasks"
 
-task :default => [:build, :test] do
+task :default => [:build, :install, :test] do
 	puts "Done"
 end
 
