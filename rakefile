@@ -1,8 +1,11 @@
-task :default do => [:test]
+require "rake/testtask"
 
-desc :test do => :build
-	puts "Testing gem..."
-	load "test/test.rb"
+task :default => [:build, :test] do
+	puts "Done"
+end
+
+Rake::TestTask.new do |t|
+  t.libs << "test"
 end
 
 desc "Build and install the figure_list gem"
