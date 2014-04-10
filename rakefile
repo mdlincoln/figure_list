@@ -1,5 +1,14 @@
+task :default do => [:test]
+
+desc :test do => :build
+	puts "Testing gem..."
+	load "test/test.rb"
+end
+
 desc "Build and install the figure_list gem"
 task :build do
+	puts "Building gem..."
 	`gem build figure_list.gemspec`
+	puts "Installing gem..."
 	`gem install figure_list-0.0.1.gem`
 end
