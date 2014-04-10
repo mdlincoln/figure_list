@@ -8,3 +8,13 @@ collaert_1590:
   location: Amsterdam
   source: "http://rijksmuseum.nl/"
   img: "/foo/bar.jpg"
+heemskerck_1532:
+  artist: "Maarten van Heemskerck"
+  title: "Saint Luke Painting the Madonna"
+  date: "1532"
+  medium: "Oil on oak panel"
+  dimensions: "168 x 235 cm"
+  collection: Frans Hals Museum
+  location: Haarlem
+  source: "http://commons.wikimedia.org/"
+  img: "/foo/blerg.jpg"

@@ -19,7 +19,7 @@ class FigureList
     list_string = "\# Figures\n\n"
     @figure_captions.each do |caption|
       list_string << caption.render
-      list_string << "\n"
+      list_string << "\n\n"
     end
     return list_string
   end
