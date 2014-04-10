@@ -1,7 +1,10 @@
 require "rake/testtask"
+require "rake/clean"
 require "rubygems/tasks"
 
-task :default => [:build, :install, :test] do
+CLOBBER.include("test/test.md")
+
+task :default => [:build, :install, :test, :clobber] do
 	puts "Done"
 end
 

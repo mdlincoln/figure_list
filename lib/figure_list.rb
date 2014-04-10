@@ -23,4 +23,11 @@ class FigureList
     end
     return list_string
   end
+
+  # Write a figure list out to file
+  def figlist_to_file(filepath)
+    File.open(filepath, "w") do |file|
+      file << self.generate_figlist
+    end
+  end
 end
