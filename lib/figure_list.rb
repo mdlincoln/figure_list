@@ -29,4 +29,5 @@ class FigureList
     File.open(filepath, "w") do |file|
       file << self.generate_figlist
     end
+  end
 end

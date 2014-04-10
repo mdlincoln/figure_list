@@ -12,4 +12,5 @@ class FigureListTest < Test::Unit::TestCase
 		FigureList.new("test/sample.yaml").figlist_to_file(out_path)
 		assert_equal File.open("test/sample.md", "r").read,
 			File.open("test/test.md", "r").read
+	end
 end
