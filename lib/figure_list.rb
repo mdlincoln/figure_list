@@ -16,7 +16,7 @@ class FigureList
 
   # Render an entire figure list
   def generate_figlist
-    list_string = "\# Figures\n\n"
+    list_string = "\# Figures {-}\n\n"
     @figure_captions.each do |caption|
       list_string << caption.render
       list_string << "\n\n"
